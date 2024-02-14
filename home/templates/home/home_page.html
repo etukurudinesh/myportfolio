@@ -2,5 +2,28 @@
 {% load static %}
 
 {% block content %}
-{{page.title}}
+
+    {% include 'home/nav_bar.html' %}
+    <div class = "container-fluid">
+        
+        <div class="row">
+            <div class="col">
+                <div class= "text-center fs-2">
+                    {{page.name}}
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center fs-2">
+                    Picture goes here
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="text-center fs-2">
+                    We are here
+                </div>
+            </div>
+        </div>
+    </divs>
 {% endblock content %}
